@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
 :root {
-  font-family: 'Young Serif', serif;
-  --number-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  --number-font: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #1f1f1f;
-  background: #ffffff;
+  background: #f3f5f8;
   --soft-blue: #eef5ff;
   --soft-blue-line: #dbe8ff;
   --soft-green: #eefaf4;
@@ -27,6 +27,7 @@
 body {
   margin: 0;
   min-width: 320px;
+  background: #f3f5f8;
 }
 
 #app {
@@ -46,11 +47,17 @@ body {
 .gallery-card,
 .offer-card,
 .details-card {
-  background-color: #ffffff;
+  background-color: #fcfdff;
   border-radius: 18px;
   padding: 2rem;
-  border: 1px solid var(--soft-gray-line);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid #d9e3f0;
+  box-shadow: 0 12px 24px rgba(41, 55, 77, 0.12);
+}
+
+.gallery-card,
+.offer-card,
+.details-card {
+  position: static;
 }
 
 .gallery-card {
@@ -135,7 +142,7 @@ h1 {
 
 .price-option {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   padding: 0.55rem 0.75rem;
@@ -203,8 +210,8 @@ h1 {
 }
 
 .buy-now svg {
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 2rem;
+  height: 2rem;
   fill: currentColor;
 }
 

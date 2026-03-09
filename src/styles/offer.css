@@ -44,15 +44,16 @@
 .price-option span {
   color: #39556f;
   font-weight: 600;
+  font-size: 14px;
   font-family: var(--number-font);
 }
 
 .price {
   margin: 0;
-  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  font-size: clamp(1.1rem, 3vw, 1.7rem);
   line-height: 1;
   color: #111111;
-  font-weight: 800;
+  font-weight: 700;
   font-family: var(--number-font);
   font-variant-numeric: tabular-nums;
 }

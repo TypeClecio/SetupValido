@@ -7,7 +7,7 @@
   font-weight: 400;
   color: #1f1f1f;
   background: #f3f5f8;
-  --soft-blue: #eef5ff;
+  --soft-blue: #e7f1ff;
   --soft-blue-line: #dbe8ff;
   --soft-green: #eefaf4;
   --soft-green-line: #d4efdf;
@@ -22,6 +22,7 @@
 
 * {
   box-sizing: border-box;
+  line-height: 1.1;
 }
 
 body {

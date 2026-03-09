@@ -26,8 +26,13 @@
     padding: 1.2rem;
   }
 
+  .buy-now svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
   .buy-now span {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   dl div {

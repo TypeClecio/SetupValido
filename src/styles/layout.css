@@ -34,3 +34,31 @@
 .details-card {
   grid-area: details;
 }
+
+.site-footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: #526174;
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-links {
+  margin-top: 0.45rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.footer-links a {
+  color: #2d4f73;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

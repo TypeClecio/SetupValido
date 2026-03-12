@@ -16,11 +16,17 @@ export type ProductConfiguration = {
   title: string
   subtitle: string
   price: string
-  highlights: string[]
   specifications: Specification[]
+}
+
+export type ProductLocation = {
+  city: string
+  state: string
+  zip: string
 }
 
 export type ProductInfo = {
   configurations: ProductConfiguration[]
   media: ProductMedia[]
+  location: ProductLocation
 }

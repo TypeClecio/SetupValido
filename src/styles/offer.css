@@ -94,14 +94,28 @@
   font-variant-numeric: tabular-nums;
 }
 
-.highlights {
+.impact-location {
   margin: 0 0 1.8rem;
-  padding-left: 1.2rem;
-  color: #364a5f;
+  padding: 0.95rem 1.1rem;
+  border-radius: 16px;
+  border: 1px solid #cddcee;
+  background: linear-gradient(135deg, #f5f9ff, #eef4ff);
 }
 
-.highlights li + li {
-  margin-top: 0.45rem;
+.impact-location-title {
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #46566a;
+}
+
+.impact-location-value {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #16283a;
 }
 
 .actions {

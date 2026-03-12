@@ -8,8 +8,6 @@ const whatsappIcon = `
   </svg>
 `
 
-export const renderHighlights = (highlights: string[]) => highlights.map((item) => `<li>${item}</li>`).join('')
-
 export const renderOfferCard = (product: ProductInfo, selectedConfiguration: ProductConfiguration) => `
   <section class="offer-card">
     <p class="tag">Oferta limitada</p>
@@ -42,9 +40,12 @@ export const renderOfferCard = (product: ProductInfo, selectedConfiguration: Pro
       </div>
     </div>
 
-    <ul class="highlights" data-highlights>
-      ${renderHighlights(selectedConfiguration.highlights)}
-    </ul>
+    <div class="impact-location">
+      <p class="impact-location-title">Localização do setup</p>
+      <p class="impact-location-value" data-location-text>
+        ${product.location.city} - ${product.location.state}, ${product.location.zip}
+      </p>
+    </div>
 
     <div class="actions">
       <a class="buy-now" href="#" target="_blank" rel="noreferrer" data-whatsapp-link>

@@ -2,7 +2,6 @@ import './style.css'
 import { inject } from '@vercel/analytics'
 import { renderSpecifications } from './components/details-card'
 import { setupGallery } from './components/gallery'
-import { renderHighlights } from './components/offer-card'
 import { renderStorePage } from './components/store-page'
 import { productInfo, sellerPhone } from './data/product'
 import type { ProductConfiguration, ProductInfo } from './types'
@@ -25,12 +24,11 @@ const updateSelectedConfiguration = (configuration: ProductConfiguration) => {
   const subtitle = document.querySelector<HTMLElement>('[data-product-subtitle]')
   const selectedConfig = document.querySelector<HTMLElement>('[data-selected-config]')
   const selectedPrice = document.querySelector<HTMLElement>('[data-selected-price]')
-  const highlights = document.querySelector<HTMLUListElement>('[data-highlights]')
   const specifications = document.querySelector<HTMLDListElement>('[data-specifications]')
   const whatsappLink = document.querySelector<HTMLAnchorElement>('[data-whatsapp-link]')
   const whatsappText = document.querySelector<HTMLElement>('[data-whatsapp-text]')
 
-  if (!title || !subtitle || !selectedConfig || !selectedPrice || !highlights || !specifications || !whatsappLink || !whatsappText) {
+  if (!title || !subtitle || !selectedConfig || !selectedPrice || !specifications || !whatsappLink || !whatsappText) {
     return
   }
 
@@ -38,7 +36,6 @@ const updateSelectedConfiguration = (configuration: ProductConfiguration) => {
   subtitle.textContent = configuration.subtitle
   selectedConfig.textContent = configuration.buttonLabel
   selectedPrice.textContent = configuration.price
-  highlights.innerHTML = renderHighlights(configuration.highlights)
   specifications.innerHTML = renderSpecifications(configuration.specifications)
   whatsappLink.href = buildWhatsAppUrl(sellerPhone, configuration)
   whatsappText.textContent = `Negociar com o vendedor`

@@ -10,12 +10,6 @@ export const productInfo: ProductInfo = {
       title: 'Setup Premium Ryzen 7 5700X + GTX 1080TI + 24 GB DDR4',
       subtitle: 'Computador de mesa de alta performance com monitor 200Hz e perifericos inclusos.',
       price: 'R$ 9.500,00',
-      highlights: [
-        'Ryzen 7 5700X + GTX 1080TI',
-        '24 GB RAM DDR4 e 1 TB de armazenamento',
-        'Watercooler 360mm + 6 fans com controladora',
-        'Monitor 200Hz e teclado Mancer Ghost',
-      ],
       specifications: [
         { label: 'Processador', value: 'AMD Ryzen 7 5700X' },
         { label: 'Memória', value: '24 GB DDR4' },
@@ -34,12 +28,6 @@ export const productInfo: ProductInfo = {
       title: 'Setup Premium Ryzen 5 5500 + GTX 1080TI + 24 GB DDR4',
       subtitle: 'Versao com melhor custo-beneficio, mantendo monitor 200Hz e perifericos inclusos.',
       price: 'R$ 8.700,00',
-      highlights: [
-        'Ryzen 5 5500 + GTX 1080TI',
-        '24 GB RAM DDR4 e 1 TB de armazenamento',
-        'Watercooler 360mm + 6 fans com controladora',
-        'Monitor 200Hz e teclado Mancer Ghost',
-      ],
       specifications: [
         { label: 'Processador', value: 'AMD Ryzen 5 5500' },
         { label: 'Memória', value: '24 GB DDR4' },
@@ -82,4 +70,9 @@ export const productInfo: ProductInfo = {
       poster: '/imagens/placa-de-video.webp',
     },
   ],
+  location: {
+    city: 'Várzea Alegre',
+    state: 'CE',
+    zip: '63540-000',
+  },
 }

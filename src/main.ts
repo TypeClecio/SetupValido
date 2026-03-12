@@ -21,19 +21,17 @@ const buildWhatsAppUrl = (phone: string, configuration: ProductConfiguration) =>
 
 const updateSelectedConfiguration = (configuration: ProductConfiguration) => {
   const title = document.querySelector<HTMLElement>('[data-product-title]')
-  const subtitle = document.querySelector<HTMLElement>('[data-product-subtitle]')
   const selectedConfig = document.querySelector<HTMLElement>('[data-selected-config]')
   const selectedPrice = document.querySelector<HTMLElement>('[data-selected-price]')
   const specifications = document.querySelector<HTMLDListElement>('[data-specifications]')
   const whatsappLink = document.querySelector<HTMLAnchorElement>('[data-whatsapp-link]')
   const whatsappText = document.querySelector<HTMLElement>('[data-whatsapp-text]')
 
-  if (!title || !subtitle || !selectedConfig || !selectedPrice || !specifications || !whatsappLink || !whatsappText) {
+  if (!title || !selectedConfig || !selectedPrice || !specifications || !whatsappLink || !whatsappText) {
     return
   }
 
   title.textContent = configuration.title
-  subtitle.textContent = configuration.subtitle
   selectedConfig.textContent = configuration.buttonLabel
   selectedPrice.textContent = configuration.price
   specifications.innerHTML = renderSpecifications(configuration.specifications)

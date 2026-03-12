@@ -11,11 +11,6 @@
   text-transform: uppercase;
 }
 
-.subtitle {
-  margin: 0.75rem 0 1.4rem;
-  color: var(--soft-text);
-}
-
 .price-block {
   margin-bottom: 1.25rem;
 }
@@ -95,7 +90,7 @@
 }
 
 .impact-location {
-  margin: 0 0 1.8rem;
+  margin: 0.75rem 0 1.4rem;
   padding: 0.95rem 1.1rem;
   border-radius: 16px;
   border: 1px solid #cddcee;

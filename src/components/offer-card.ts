@@ -12,7 +12,12 @@ export const renderOfferCard = (product: ProductInfo, selectedConfiguration: Pro
   <section class="offer-card">
     <p class="tag">Oferta limitada</p>
     <h1 data-product-title>${selectedConfiguration.title}</h1>
-    <p class="subtitle" data-product-subtitle>${selectedConfiguration.subtitle}</p>
+    <div class="impact-location">
+      <p class="impact-location-title">Localizacao do setup</p>
+      <p class="impact-location-value" data-location-text>
+        ${product.location.city}, ${product.location.state} - CEP ${product.location.zip}
+      </p>
+    </div>
 
     <div class="price-block">
       <p class="price-title">Escolha a configuração:</p>
@@ -40,13 +45,6 @@ export const renderOfferCard = (product: ProductInfo, selectedConfiguration: Pro
       </div>
     </div>
 
-    <div class="impact-location">
-      <p class="impact-location-title">Localização do setup</p>
-      <p class="impact-location-value" data-location-text>
-        ${product.location.city} - ${product.location.state}, ${product.location.zip}
-      </p>
-    </div>
-
     <div class="actions">
       <a class="buy-now" href="#" target="_blank" rel="noreferrer" data-whatsapp-link>
         ${whatsappIcon}
@@ -55,3 +53,4 @@ export const renderOfferCard = (product: ProductInfo, selectedConfiguration: Pro
     </div>
   </section>
 `
+

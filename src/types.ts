@@ -14,7 +14,6 @@ export type ProductConfiguration = {
   id: string
   buttonLabel: string
   title: string
-  subtitle: string
   price: string
   specifications: Specification[]
 }

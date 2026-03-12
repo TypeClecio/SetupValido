@@ -4,7 +4,7 @@ import { renderSpecifications } from './components/details-card'
 import { setupGallery } from './components/gallery'
 import { renderStorePage } from './components/store-page'
 import { productInfo, sellerPhone } from './data/product'
-import type { ProductConfiguration, ProductInfo } from './types'
+import type { ProductConfiguration, ProductInfo, ProductLocation } from './types'
 
 inject({
   mode: import.meta.env.DEV ? 'development' : 'production',
@@ -17,6 +17,30 @@ const buildWhatsAppUrl = (phone: string, configuration: ProductConfiguration) =>
   )
 
   return `https://wa.me/${phone}?text=${whatsappMessage}`
+}
+
+const buildMapsUrl = (location: ProductLocation) => {
+  const query = [location.city, location.state, location.zip].filter(Boolean).join(', ')
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`
+}
+
+const setupLocationLink = (location: ProductLocation) => {
+  const locationCard = document.querySelector<HTMLElement>('[data-location-card]')
+
+  if (!locationCard) {
+    return
+  }
+
+  const mapsUrl = buildMapsUrl(location)
+  const openMap = () => window.open(mapsUrl, '_blank', 'noopener,noreferrer')
+
+  locationCard.addEventListener('click', openMap)
+  locationCard.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault()
+      openMap()
+    }
+  })
 }
 
 const updateSelectedConfiguration = (configuration: ProductConfiguration) => {
@@ -73,3 +97,4 @@ const setupConfigurationSelector = (product: ProductInfo) => {
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = renderStorePage(productInfo)
 setupGallery(productInfo.media)
 setupConfigurationSelector(productInfo)
+setupLocationLink(productInfo.location)

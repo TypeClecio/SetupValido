@@ -12,7 +12,7 @@ export const renderOfferCard = (product: ProductInfo, selectedConfiguration: Pro
   <section class="offer-card">
     <p class="tag">Oferta limitada</p>
     <h1 data-product-title>${selectedConfiguration.title}</h1>
-    <div class="impact-location">
+    <div class="impact-location" data-location-card role="button" tabindex="0">
       <p class="impact-location-title">Localizacao do setup</p>
       <p class="impact-location-value" data-location-text>
         ${product.location.city}, ${product.location.state} - CEP ${product.location.zip}

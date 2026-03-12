@@ -95,6 +95,19 @@
   border-radius: 16px;
   border: 1px solid #cddcee;
   background: linear-gradient(135deg, #f5f9ff, #eef4ff);
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.impact-location:hover {
+  transform: translateY(-1px);
+  border-color: #b6c9e4;
+  box-shadow: 0 12px 22px rgba(45, 78, 114, 0.12);
+}
+
+.impact-location:focus-visible {
+  outline: 2px solid #2f5f91;
+  outline-offset: 3px;
 }
 
 .impact-location-title {

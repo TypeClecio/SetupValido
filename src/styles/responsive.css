@@ -31,15 +31,6 @@
     grid-template-columns: 1fr;
   }
 
-  .buy-now svg {
-    width: 1.2rem;
-    height: 1.2rem;
-  }
-
-  .buy-now span {
-    font-size: 12px;
-  }
-
   dl div {
     grid-template-columns: 1fr;
     gap: 0.2rem;

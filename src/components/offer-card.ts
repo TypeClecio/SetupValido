@@ -20,8 +20,8 @@ export const renderOfferCard = (product: ProductInfo, selectedConfiguration: Pro
       <p class="price-title">Escolha a configuração:</p>
       <div class="config-options" role="group" aria-label="Escolha a configuracao do setup">
         ${product.configurations
-        .map(
-          (configuration) => `
+    .map(
+      (configuration) => `
             <button
               type="button"
               class="config-button ${configuration.id === selectedConfiguration.id ? 'is-active' : ''}"
@@ -31,8 +31,8 @@ export const renderOfferCard = (product: ProductInfo, selectedConfiguration: Pro
               ${configuration.buttonLabel}
             </button>
           `,
-        )
-        .join('')}
+    )
+    .join('')}
       </div>
 
       <div class="selected-offer">
@@ -49,7 +49,7 @@ export const renderOfferCard = (product: ProductInfo, selectedConfiguration: Pro
     <div class="actions">
       <a class="buy-now" href="#" target="_blank" rel="noreferrer" data-whatsapp-link>
         ${whatsappIcon}
-        <span data-whatsapp-text>Falar sobre ${selectedConfiguration.buttonLabel} no WhatsApp</span>
+        <span data-whatsapp-text>Negociar com o vendedor</span>
       </a>
     </div>
   </section>

@@ -41,7 +41,7 @@ const updateSelectedConfiguration = (configuration: ProductConfiguration) => {
   highlights.innerHTML = renderHighlights(configuration.highlights)
   specifications.innerHTML = renderSpecifications(configuration.specifications)
   whatsappLink.href = buildWhatsAppUrl(sellerPhone, configuration)
-  whatsappText.textContent = `Falar com o vendedor no WhatsApp`
+  whatsappText.textContent = `Negociar com o vendedor`
 }
 
 const setupConfigurationSelector = (product: ProductInfo) => {

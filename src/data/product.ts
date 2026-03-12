@@ -73,4 +73,15 @@ export const productInfo: ProductInfo = {
     state: 'CE',
     zip: '63540-000',
   },
+  paymentOptions: [
+    { icon: 'pix', label: 'Pix' },
+    { icon: 'card', label: 'Cartao' },
+    { icon: 'installment', label: 'Parcelamento' },
+  ],
+  valuePoints: [
+    { icon: 'bolt', label: 'Pronto para jogar' },
+    { icon: 'monitor', label: 'Monitor 200Hz incluso' },
+    { icon: 'package', label: 'Setup completo' },
+  ],
 }
+

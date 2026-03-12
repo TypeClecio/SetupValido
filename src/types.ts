@@ -10,6 +10,13 @@ export type Specification = {
   value: string
 }
 
+export type OfferIcon = 'pix' | 'card' | 'installment' | 'bolt' | 'monitor' | 'package'
+
+export type OfferBadge = {
+  icon: OfferIcon
+  label: string
+}
+
 export type ProductConfiguration = {
   id: string
   buttonLabel: string
@@ -28,4 +35,6 @@ export type ProductInfo = {
   configurations: ProductConfiguration[]
   media: ProductMedia[]
   location: ProductLocation
+  paymentOptions: OfferBadge[]
+  valuePoints: OfferBadge[]
 }

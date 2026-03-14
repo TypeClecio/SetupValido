@@ -58,6 +58,16 @@ export const productInfo: ProductInfo = {
       alt: 'Placa de video',
     },
     {
+      type: 'image',
+      src: '/imagens/setup-visao-geral.webp',
+      alt: 'Setup visão geral',
+    },
+    {
+      type: 'image',
+      src: '/imagens/setup-rgb-azul.webp',
+      alt: 'Setup com rgb azul',
+    },
+    {
       type: 'video',
       src: '/videos/mostrando-setup.webm',
       alt: 'Video mostrando o setup completo',

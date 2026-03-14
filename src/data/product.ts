@@ -1,6 +1,6 @@
 import type { ProductInfo } from '../types'
 
-export const sellerPhone = '558899778856'
+export const sellerPhone = '5588994899407'
 
 export const productInfo: ProductInfo = {
   configurations: [

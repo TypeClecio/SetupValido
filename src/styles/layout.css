@@ -137,11 +137,6 @@
   stroke-linejoin: round;
 }
 
-.store-pill:nth-child(2) .store-pill-icon svg {
-  fill: currentColor;
-  stroke: none;
-}
-
 .site-footer {
   margin: 2.6rem 0 3rem;
   padding: 1.4rem 1.6rem;

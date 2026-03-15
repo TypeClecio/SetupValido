@@ -11,7 +11,6 @@ export const productInfo: ProductInfo = {
       total: 128,
     },
     highlights: [
-      { icon: 'shield', label: 'Garantia de 90 dias' },
       { icon: 'truck', label: 'Entrega local combinada' },
     ],
   },

@@ -7,12 +7,6 @@ const clockIcon = `
   </svg>
 `
 
-const starIcon = `
-  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-    <path d="M12 3.5 14.6 9l6.1.9-4.4 4.3 1 6.1L12 17.4 6.7 20.3l1-6.1-4.4-4.3 6.1-.9z" />
-  </svg>
-`
-
 const pinIcon = `
   <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
     <path d="M12 3a7 7 0 0 1 7 7c0 4.6-5 9.5-7 11.5-2-2-7-6.9-7-11.5a7 7 0 0 1 7-7Z" />
@@ -43,9 +37,6 @@ const highlightIcons: Record<SellerHighlight['icon'], string> = {
   `,
 }
 
-const formatRating = (rating: SellerInfo['rating']) =>
-  `${rating.value.toFixed(1).replace('.', ',')} (${rating.total} avaliacoes)`
-
 const renderHighlights = (items: SellerHighlight[]) =>
   items
     .map(
@@ -75,10 +66,6 @@ export const renderStoreHeader = (seller: SellerInfo, location: ProductLocation)
       <span class="store-pill">
         <span class="store-pill-icon">${clockIcon}</span>
         <span>${seller.responseTime}</span>
-      </span>
-      <span class="store-pill">
-        <span class="store-pill-icon">${starIcon}</span>
-        <span>${formatRating(seller.rating)}</span>
       </span>
     </div>
   </header>

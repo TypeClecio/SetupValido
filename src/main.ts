@@ -13,7 +13,7 @@ inject({
 const buildWhatsAppUrl = (phone: string, configuration: ProductConfiguration) => {
   const pageLink = window.location.href
   const whatsappMessage = encodeURIComponent(
-    `${pageLink}\n\nGostaria de negociar:\nComputador com ${configuration.buttonLabel} no valor de ${configuration.price}`,
+    `${pageLink}\n\nOi! Quero garantir o setup ${configuration.buttonLabel} por ${configuration.price}.\nAinda esta disponivel?`,
   )
 
   return `https://wa.me/${phone}?text=${whatsappMessage}`
@@ -60,7 +60,7 @@ const updateSelectedConfiguration = (configuration: ProductConfiguration) => {
   selectedPrice.textContent = configuration.price
   specifications.innerHTML = renderSpecifications(configuration.specifications)
   whatsappLink.href = buildWhatsAppUrl(sellerPhone, configuration)
-  whatsappText.textContent = `Negociar com o vendedor`
+  whatsappText.textContent = `Quero garantir meu setup no WhatsApp`
 }
 
 const setupConfigurationSelector = (product: ProductInfo) => {

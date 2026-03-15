@@ -136,9 +136,8 @@ export const renderOfferCard = (product: ProductInfo, selectedConfiguration: Pro
     <div class="actions">
       <a class="buy-now" href="#" target="_blank" rel="noreferrer" data-whatsapp-link>
         ${whatsappIcon}
-        <span data-whatsapp-text>Negociar com o vendedor</span>
+        <span data-whatsapp-text>Quero garantir meu setup no WhatsApp</span>
       </a>
     </div>
   </section>
 `
-

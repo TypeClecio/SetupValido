@@ -4,7 +4,9 @@ export const sellerPhone = '5588994899407'
 
 export const productInfo: ProductInfo = {
   seller: {
-    name: 'SetupVálido',
+    name: 'SetupValido',
+    slogan: 'Excelência em cada frame.',
+    logoSrc: '/logo.svg',
     responseTime: 'Responde em ate 30 min',
     rating: {
       value: 4.9,

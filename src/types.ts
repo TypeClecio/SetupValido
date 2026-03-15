@@ -33,6 +33,8 @@ export type ProductLocation = {
 
 export type SellerInfo = {
   name: string
+  slogan: string
+  logoSrc: string
   responseTime: string
   rating: {
     value: number

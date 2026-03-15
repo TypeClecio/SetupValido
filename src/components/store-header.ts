@@ -52,21 +52,25 @@ const renderHighlights = (items: SellerHighlight[]) =>
 export const renderStoreHeader = (seller: SellerInfo, location: ProductLocation) => `
   <header class="store-header">
     <div class="store-header-main">
-      <p class="store-header-eyebrow">Loja</p>
-      <h2 class="store-header-title">${seller.name}</h2>
-      <div class="store-header-highlights">
-        <span class="store-highlight">
-          <span class="store-highlight-icon">${pinIcon}</span>
-          <span>${location.city} - ${location.state}</span>
-        </span>
-        ${renderHighlights(seller.highlights)}
+      <div class="store-header-brand">
+        <img class="store-header-logo" src="${seller.logoSrc}" alt="${seller.name}" />
+        <div class="store-header-information">
+          <p class="store-header-eyebrow">Loja</p>
+          <h2 class="store-header-title">${seller.name}</h2>
+          <p class="store-header-slogan">${seller.slogan}</p>
+        </div>
       </div>
-    </div>
-    <div class="store-header-meta">
-      <span class="store-pill">
-        <span class="store-pill-icon">${clockIcon}</span>
+    <div class="store-header-highlights">
+      <span class="store-highlight">
+        <span class="store-highlight-icon">${pinIcon}</span>
+        <span>${location.city} - ${location.state}</span>
+      </span>
+      <span class="store-highlight">
+        <span class="store-highlight-icon">${clockIcon}</span>
         <span>${seller.responseTime}</span>
       </span>
+      ${renderHighlights(seller.highlights)}
     </div>
-  </header>
+  </div>
+</header>
 `

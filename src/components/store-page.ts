@@ -21,7 +21,7 @@ export const renderStorePage = (product: ProductInfo) => {
           <img class="footer-logo-image" src="/logo.svg" alt="setupvalido" />
           <div>
             <strong class="footer-logo-name">setupvalido</strong>
-            <span class="footer-logo-slogan">Seu setup pronto para jogar</span>
+            <span class="footer-logo-slogan">Excelência em cada frame.</span>
           </div>
         </div>
         <p class="footer-copy">© 2026 setupvalido. Todos os direitos reservados.</p>
@@ -39,8 +39,9 @@ export const renderStorePage = (product: ProductInfo) => {
         </a>
         <a href="https://github.com/TypeClecio" target="_blank" rel="noreferrer">
           <span class="footer-link-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path d="M12 2c-5.5 0-10 4.5-10 10 0 4.4 2.9 8.2 6.9 9.5.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.2-1.4-1.2-1.4-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.5-.7 1.7-1 .1-.8.4-1.3.7-1.6-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.8-.1-.2-.4-1.4.1-2.9 0 0 .8-.3 2.8 1.1.8-.2 1.7-.3 2.6-.3.9 0 1.8.1 2.6.3 2-1.4 2.8-1.1 2.8-1.1.5 1.5.2 2.7.1 2.9.6.8 1 1.7 1 2.8 0 3.9-2.4 4.7-4.6 5 .4.3.8 1 .8 2v3c0 .3.2.6.7.5 4-1.3 6.9-5.1 6.9-9.5 0-5.5-4.5-10-10-10Z" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
             </svg>
           </span>
           GitHub

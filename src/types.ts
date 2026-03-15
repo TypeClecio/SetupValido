@@ -3,6 +3,7 @@ export type ProductMedia = {
   src: string
   alt: string
   poster?: string
+  thumbSrc?: string
 }
 
 export type Specification = {

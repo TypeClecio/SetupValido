@@ -58,26 +58,31 @@ export const productInfo: ProductInfo = {
     {
       type: 'image',
       src: '/imagens/setup-completo.webp',
+      thumbSrc: '/imagens/thumbs/setup-completo.webp',
       alt: 'Setup completo',
     },
     {
       type: 'image',
       src: '/imagens/setup-completo-dia.webp',
+      thumbSrc: '/imagens/thumbs/setup-completo-dia.webp',
       alt: 'Setup completo durante o dia',
     },
     {
       type: 'image',
       src: '/imagens/placa-de-video.webp',
+      thumbSrc: '/imagens/thumbs/placa-de-video.webp',
       alt: 'Placa de video',
     },
     {
       type: 'image',
       src: '/imagens/setup-visao-geral.webp',
+      thumbSrc: '/imagens/thumbs/setup-visao-geral.webp',
       alt: 'Setup visão geral',
     },
     {
       type: 'image',
       src: '/imagens/setup-rgb-azul.webp',
+      thumbSrc: '/imagens/thumbs/setup-rgb-azul.webp',
       alt: 'Setup com rgb azul',
     },
     {
@@ -85,12 +90,14 @@ export const productInfo: ProductInfo = {
       src: '/videos/mostrando-setup.webm',
       alt: 'Video mostrando o setup completo',
       poster: '/imagens/setup-completo.webp',
+      thumbSrc: '/imagens/thumbs/setup-completo.webp',
     },
     {
       type: 'video',
       src: '/videos/mostrando-componentes.webm',
       alt: 'Video mostrando os componentes do setup',
       poster: '/imagens/placa-de-video.webp',
+      thumbSrc: '/imagens/thumbs/placa-de-video.webp',
     },
   ],
   location: {
